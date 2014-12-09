@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mathpops"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mathpops_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="InstructionsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="LevelsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="MultiplesActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="SumActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="PrimesActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="GameOverActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="YouWinActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
